@@ -1,0 +1,80 @@
+
+.tableActions {
+    width: 120px;
+}
+
+.navbar-inverse {
+    background: linear-gradient(20deg,#18ccc0,#80deea);
+    border: none;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-nav>li>a:hover {
+    color: #dadada;
+}
+
+.container-plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container-plans .plan {
+    width: calc(100% / 4 - 2%);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container-plans .plan .description {
+    padding: 50px 10px;
+    background: #5bcfc6;
+    min-height: 140px;
+    
+}
+
+.container-plans .plan .price {
+    background: #d4d4d4;
+    padding: 15px 0;
+}
+/* 
+$media_xs: 480px;
+$media_sm: 620px;
+$media_md: 768px;
+$media_lg: 990px;
+$media_xg: 1070px; */
+
+@media (max-width: 1070px) 
+{
+    .container-plans .plan {
+        width: calc(100% / 4 - 2%);
+    }
+}
+
+@media (max-width: 990px) 
+{
+    .container-plans .plan {
+        width: calc(100% / 3 - 2%);
+    }
+}
+
+@media (max-width: 768px) 
+{
+    .container-plans .plan {
+        width: calc(100% / 2 - 2%);
+    }
+    
+    .container-plans .plan .description {
+        min-height: none;
+    }
+}
+
+@media (max-width: 620px) 
+{
+    .container-plans .plan {
+        width: 100%;
+    }
+}
+
